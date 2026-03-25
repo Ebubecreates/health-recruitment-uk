@@ -64,7 +64,7 @@ export function HeroSection() {
             <img 
               src="/images/healthcare-team.png" 
               alt="Healthcare professionals - doctor and nurse" 
-              className="w-full lg:w-[130%] h-auto object-cover rounded-2xl shadow-2xl"
+              className="w-full lg:w-[180%] h-auto object-cover"
             />
           </div>
         </div>
