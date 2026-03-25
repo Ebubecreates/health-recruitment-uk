@@ -42,11 +42,6 @@ export function Footer() {
                 className="h-12 w-auto"
               />
             </Link>
-            <p className="mt-4 text-sm text-white/60 leading-relaxed max-w-sm">
-              The UK&apos;s leading healthcare recruitment platform. Connecting
-              verified healthcare professionals with NHS trusts and private
-              healthcare providers.
-            </p>
 
             {/* Trust Badges */}
             <div className="mt-6 flex flex-wrap gap-4">
