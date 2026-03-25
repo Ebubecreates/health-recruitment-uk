@@ -3,20 +3,11 @@ import { ShieldCheckIcon, CheckCircleIcon, ArrowRightIcon } from "@heroicons/rea
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-background min-h-[90vh] flex items-center">
-      {/* Healthcare Team Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/healthcare-team.png" 
-          alt="Healthcare professionals - doctor and nurse" 
-          className="w-full h-full object-cover"
-        />
-        {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-white/20" />
-      </div>
-
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-        <div className="max-w-2xl">
+    <section className="relative overflow-hidden bg-background py-20 lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+          {/* Content Section */}
+          <div>
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">
             <ShieldCheckIcon className="h-4 w-4" />
@@ -50,21 +41,31 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/auth/register"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all group"
-            >
-              Start Your Application
-              <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              href="/auth/login"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-border bg-white px-8 py-4 text-base font-bold text-foreground hover:border-primary hover:text-primary transition-all"
-            >
-              Sign In
-            </Link>
+            {/* CTA Buttons */}
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/auth/register"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all group"
+              >
+                Start Your Application
+                <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link
+                href="/auth/login"
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-border bg-white px-8 py-4 text-base font-bold text-foreground hover:border-primary hover:text-primary transition-all"
+              >
+                Sign In
+              </Link>
+            </div>
+          </div>
+
+          {/* Image Section - Left Side */}
+          <div className="relative order-first lg:order-last flex justify-center lg:justify-end">
+            <img 
+              src="/images/healthcare-team.png" 
+              alt="Healthcare professionals - doctor and nurse" 
+              className="w-full max-w-lg lg:max-w-none lg:h-[500px] object-cover rounded-2xl shadow-2xl"
+            />
           </div>
         </div>
       </div>
