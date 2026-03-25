@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SparklesIcon, ShieldCheckIcon, LockClosedIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
+import { ShieldCheckIcon, LockClosedIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const footerLinks = {
   platform: [
@@ -36,17 +36,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
-                <SparklesIcon className="h-6 w-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-white">
-                  Health Recruitment UK
-                </span>
-                <span className="text-[10px] font-medium uppercase tracking-wider text-primary">
-                  NHS Partner Network
-                </span>
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="Health Recruitment UK"
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="mt-4 text-sm text-white/60 leading-relaxed max-w-sm">
               The UK&apos;s leading healthcare recruitment platform. Connecting

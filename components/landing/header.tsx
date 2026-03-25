@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon, SparklesIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,17 +13,11 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
-              <SparklesIcon className="h-6 w-6" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold text-foreground">
-                Health Recruitment UK
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-wider text-primary">
-                NHS Partner Network
-              </span>
-            </div>
+            <img
+              src="/images/logo.png"
+              alt="Health Recruitment UK"
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
