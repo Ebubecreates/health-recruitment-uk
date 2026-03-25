@@ -33,24 +33,24 @@ const steps = [
 
 export function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-20 lg:py-32 bg-muted/50">
+    <section id="how-it-works" className="py-12 sm:py-16 lg:py-32 bg-muted/50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span className="inline-block rounded-full bg-primary/10 px-3 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-primary mb-3 sm:mb-4">
             Simple Process
           </span>
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground text-balance leading-tight">
             Get Started in 4 Simple Steps
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-muted-foreground">
             Our streamlined application process makes it easy to verify your
             credentials and start your healthcare career in the UK.
           </p>
         </div>
 
         {/* Steps */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <div key={step.step} className="relative">
               {/* Connector Line (hidden on mobile and last item) */}
@@ -61,18 +61,18 @@ export function HowItWorksSection() {
               <div className="relative flex flex-col items-center text-center">
                 {/* Step Number */}
                 <div className="relative mb-4">
-                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white border-2 border-primary shadow-lg">
-                    <step.icon className="h-10 w-10 text-primary" />
+                  <div className="flex h-20 w-20 sm:h-24 sm:w-24 items-center justify-center rounded-full bg-white border-2 border-primary shadow-lg">
+                    <step.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
                   </div>
-                  <span className="absolute -top-2 -right-2 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
+                  <span className="absolute -top-2 -right-2 flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full bg-primary text-xs sm:text-sm font-bold text-white">
                     {step.step}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-foreground mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {step.description}
                 </p>
               </div>
