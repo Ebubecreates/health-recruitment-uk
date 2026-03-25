@@ -1,29 +1,29 @@
-import { UserPlus, FileUp, ScanFace, CheckCircle } from "lucide-react";
+import { UserPlusIcon, ArrowUpTrayIcon, FaceSmileIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const steps = [
   {
-    icon: UserPlus,
+    icon: UserPlusIcon,
     step: "01",
     title: "Create Account",
     description:
       "Sign up with your email and basic information. Verify your email address to get started.",
   },
   {
-    icon: FileUp,
+    icon: ArrowUpTrayIcon,
     step: "02",
     title: "Upload Documents",
     description:
       "Upload your passport, medical credentials, diplomas, and other required documents securely.",
   },
   {
-    icon: ScanFace,
+    icon: FaceSmileIcon,
     step: "03",
     title: "Identity Verification",
     description:
       "Complete biometric verification with passport scan, selfie, and liveness check for security.",
   },
   {
-    icon: CheckCircle,
+    icon: CheckCircleIcon,
     step: "04",
     title: "Get Verified",
     description:

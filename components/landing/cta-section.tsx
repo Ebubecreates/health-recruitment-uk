@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 export function CTASection() {
   return (
@@ -33,7 +33,7 @@ export function CTASection() {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-4 text-base font-bold text-primary shadow-lg hover:bg-white/90 transition-all group"
               >
                 Create Free Account
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 href="/auth/login"

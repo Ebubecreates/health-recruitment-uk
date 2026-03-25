@@ -1,26 +1,26 @@
-import { Shield, Lock, Eye, Server } from "lucide-react";
+import { ShieldCheckIcon, LockClosedIcon, EyeIcon, ServerIcon } from "@heroicons/react/24/solid";
 
 const trustFeatures = [
   {
-    icon: Shield,
+    icon: ShieldCheckIcon,
     title: "NHS Partner Network",
     description:
       "Official partnership with NHS trusts across England, Scotland, Wales, and Northern Ireland.",
   },
   {
-    icon: Lock,
+    icon: LockClosedIcon,
     title: "Bank-Grade Security",
     description:
       "256-bit SSL encryption protects all your personal data and documents at rest and in transit.",
   },
   {
-    icon: Eye,
+    icon: EyeIcon,
     title: "Privacy First",
     description:
       "GDPR compliant with strict data handling. Your information is never shared without consent.",
   },
   {
-    icon: Server,
+    icon: ServerIcon,
     title: "UK Data Centers",
     description:
       "All data stored in secure UK-based data centers meeting NHS Digital security standards.",
@@ -94,11 +94,11 @@ export function TrustSection() {
               {/* Trust Badges */}
               <div className="mt-8 pt-8 border-t border-white/20 flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                  <Shield className="h-4 w-4" />
+                  <ShieldCheckIcon className="h-4 w-4" />
                   <span className="text-sm font-medium">GDPR Compliant</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
-                  <Lock className="h-4 w-4" />
+                  <LockClosedIcon className="h-4 w-4" />
                   <span className="text-sm font-medium">ISO 27001</span>
                 </div>
               </div>

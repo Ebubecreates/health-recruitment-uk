@@ -1,45 +1,45 @@
 import {
-  FileCheck,
-  ShieldCheck,
-  Clock,
-  Users,
-  Building2,
-  BadgeCheck,
-} from "lucide-react";
+  DocumentCheckIcon,
+  ShieldCheckIcon,
+  ClockIcon,
+  UserGroupIcon,
+  BuildingOfficeIcon,
+  CheckBadgeIcon,
+} from "@heroicons/react/24/solid";
 
 const features = [
   {
-    icon: FileCheck,
+    icon: DocumentCheckIcon,
     title: "Document Verification",
     description:
       "Securely upload and verify your medical credentials, diplomas, and professional certifications with our automated verification system.",
   },
   {
-    icon: ShieldCheck,
+    icon: ShieldCheckIcon,
     title: "Identity Verification",
     description:
       "Multi-layer identity verification including passport scanning, facial recognition, and liveness detection for maximum security.",
   },
   {
-    icon: Clock,
+    icon: ClockIcon,
     title: "Fast Processing",
     description:
       "Our streamlined verification process ensures quick turnaround times. Most applications are reviewed within 48-72 hours.",
   },
   {
-    icon: Users,
+    icon: UserGroupIcon,
     title: "Dedicated Support",
     description:
       "Get personalized support from our healthcare recruitment specialists who understand the UK medical landscape.",
   },
   {
-    icon: Building2,
+    icon: BuildingOfficeIcon,
     title: "NHS & Private Partners",
     description:
       "Access opportunities across NHS trusts and leading private healthcare providers throughout the United Kingdom.",
   },
   {
-    icon: BadgeCheck,
+    icon: CheckBadgeIcon,
     title: "Compliance Ready",
     description:
       "All verifications meet NHS employment standards, CQC requirements, and UK healthcare regulatory guidelines.",

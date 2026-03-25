@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Stethoscope, Shield, Lock, CheckCircle } from "lucide-react";
+import { SparklesIcon, ShieldCheckIcon, LockClosedIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const footerLinks = {
   platform: [
@@ -37,7 +37,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
-                <Stethoscope className="h-6 w-6" />
+                <SparklesIcon className="h-6 w-6" />
               </div>
               <div className="flex flex-col">
                 <span className="text-lg font-bold text-white">
@@ -57,15 +57,15 @@ export function Footer() {
             {/* Trust Badges */}
             <div className="mt-6 flex flex-wrap gap-4">
               <div className="flex items-center gap-1 text-xs text-white/40">
-                <Shield className="h-4 w-4" />
+                <ShieldCheckIcon className="h-4 w-4" />
                 <span>NHS Partner</span>
               </div>
               <div className="flex items-center gap-1 text-xs text-white/40">
-                <Lock className="h-4 w-4" />
+                <LockClosedIcon className="h-4 w-4" />
                 <span>SSL Secured</span>
               </div>
               <div className="flex items-center gap-1 text-xs text-white/40">
-                <CheckCircle className="h-4 w-4" />
+                <CheckCircleIcon className="h-4 w-4" />
                 <span>GDPR Compliant</span>
               </div>
             </div>

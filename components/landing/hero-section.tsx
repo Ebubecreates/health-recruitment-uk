@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Shield, CheckCircle, ArrowRight } from "lucide-react";
+import { ShieldCheckIcon, CheckCircleIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 
 export function HeroSection() {
   return (
@@ -23,7 +23,7 @@ export function HeroSection() {
           <div className="text-center lg:text-left">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">
-              <Shield className="h-4 w-4" />
+              <ShieldCheckIcon className="h-4 w-4" />
               <span>Trusted by 10,000+ Healthcare Professionals</span>
             </div>
 
@@ -41,15 +41,15 @@ export function HeroSection() {
             {/* Trust Indicators */}
             <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
+                <CheckCircleIcon className="h-5 w-5 text-primary" />
                 <span>NHS Verified Partner</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
+                <CheckCircleIcon className="h-5 w-5 text-primary" />
                 <span>GDPR Compliant</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
+                <CheckCircleIcon className="h-5 w-5 text-primary" />
                 <span>Secure & Private</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function HeroSection() {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all group"
               >
                 Start Your Application
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 href="/auth/login"
@@ -76,65 +76,19 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               {/* Main Card */}
-              <div className="rounded-2xl bg-white p-6 shadow-xl border border-border">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center">
-                      <div className="h-8 w-8 rounded-full bg-primary" />
-                    </div>
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground">Dr. Sarah Ahmed</p>
-                    <p className="text-sm text-muted-foreground">
-                      General Practitioner
-                    </p>
-                  </div>
-                  <div className="ml-auto">
-                    <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-                      <CheckCircle className="h-3 w-3" />
-                      Verified
-                    </span>
-                  </div>
-                </div>
-
-                {/* Progress */}
-                <div className="space-y-3">
-                  <div className="flex justify-between text-sm">
-                    <span className="font-medium text-foreground">
-                      Application Progress
-                    </span>
-                    <span className="font-bold text-primary">85%</span>
-                  </div>
-                  <div className="h-2 w-full rounded-full bg-muted overflow-hidden">
-                    <div
-                      className="h-full rounded-full bg-primary"
-                      style={{ width: "85%" }}
-                    />
-                  </div>
-                </div>
-
-                {/* Stats */}
-                <div className="mt-6 grid grid-cols-3 gap-4">
-                  <div className="text-center p-3 rounded-lg bg-muted">
-                    <p className="text-2xl font-bold text-foreground">12</p>
-                    <p className="text-xs text-muted-foreground">Documents</p>
-                  </div>
-                  <div className="text-center p-3 rounded-lg bg-muted">
-                    <p className="text-2xl font-bold text-primary">8</p>
-                    <p className="text-xs text-muted-foreground">Verified</p>
-                  </div>
-                  <div className="text-center p-3 rounded-lg bg-muted">
-                    <p className="text-2xl font-bold text-foreground">4</p>
-                    <p className="text-xs text-muted-foreground">Pending</p>
-                  </div>
-                </div>
+              <div className="rounded-2xl bg-white p-0 shadow-xl border border-border overflow-hidden">
+                <img 
+                  src="/images/healthcare-team.png" 
+                  alt="Healthcare professionals - doctor and nurse" 
+                  className="w-full h-auto object-cover"
+                />
               </div>
 
               {/* Floating Badge */}
               <div className="absolute -right-4 -bottom-4 rounded-xl bg-white p-4 shadow-lg border border-border">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Shield className="h-5 w-5 text-primary" />
+                    <ShieldCheckIcon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm font-bold text-foreground">

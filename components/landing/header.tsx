@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Stethoscope } from "lucide-react";
+import { Bars3Icon, XMarkIcon, SparklesIcon } from "@heroicons/react/24/solid";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
-              <Stethoscope className="h-6 w-6" />
+              <SparklesIcon className="h-6 w-6" />
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground">
@@ -67,9 +67,9 @@ export function Header() {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6" />
+              <XMarkIcon className="h-6 w-6" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Bars3Icon className="h-6 w-6" />
             )}
           </button>
         </div>
