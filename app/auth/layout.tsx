@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Stethoscope, Shield, Lock, CheckCircle } from "lucide-react";
+import { ShieldCheckIcon, LockClosedIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 
 export default function AuthLayout({
   children,
@@ -12,12 +12,11 @@ export default function AuthLayout({
       <header className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-border p-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
-              <Stethoscope className="h-6 w-6" />
-            </div>
-            <span className="text-lg font-bold text-foreground">
-              Health Recruitment UK
-            </span>
+            <img
+              src="/images/logo.png"
+              alt="Health Recruitment UK"
+              className="h-8 w-auto"
+            />
           </Link>
         </div>
       </header>
@@ -31,19 +30,19 @@ export default function AuthLayout({
       <footer className="py-6 border-t border-border">
         <div className="flex justify-center gap-6 text-muted-foreground">
           <div className="flex items-center gap-1 text-xs">
-            <Shield className="h-4 w-4" />
+            <ShieldCheckIcon className="h-4 w-4" />
             <span className="font-medium uppercase tracking-tight">
               NHS Partner
             </span>
           </div>
           <div className="flex items-center gap-1 text-xs">
-            <Lock className="h-4 w-4" />
+            <LockClosedIcon className="h-4 w-4" />
             <span className="font-medium uppercase tracking-tight">
               Secure SSL
             </span>
           </div>
           <div className="flex items-center gap-1 text-xs">
-            <CheckCircle className="h-4 w-4" />
+            <CheckCircleIcon className="h-4 w-4" />
             <span className="font-medium uppercase tracking-tight">
               Data Protected
             </span>
