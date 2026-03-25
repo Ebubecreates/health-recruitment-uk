@@ -5,16 +5,7 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-background py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          {/* Image Section - Left Side */}
-          <div className="relative flex justify-center lg:justify-start order-first">
-            <img 
-              src="/images/healthcare-team.png" 
-              alt="Healthcare professionals - doctor and nurse" 
-              className="w-full h-auto object-cover rounded-xl"
-            />
-          </div>
-
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content Section */}
           <div>
           {/* Badge */}
@@ -66,6 +57,15 @@ export function HeroSection() {
                 Sign In
               </Link>
             </div>
+          </div>
+
+          {/* Image Section - Right Side */}
+          <div className="relative flex justify-center lg:justify-end order-last">
+            <img 
+              src="/images/healthcare-team.png" 
+              alt="Healthcare professionals - doctor and nurse" 
+              className="w-full lg:w-[130%] h-auto object-cover rounded-2xl shadow-2xl"
+            />
           </div>
         </div>
       </div>
