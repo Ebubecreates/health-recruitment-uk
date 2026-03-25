@@ -3,11 +3,11 @@ import { ShieldCheckIcon, CheckCircleIcon, ArrowRightIcon } from "@heroicons/rea
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-background py-12 sm:py-16 lg:py-32">
+    <section className="relative overflow-hidden bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-screen lg:min-h-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch min-h-[90vh] lg:min-h-screen">
           {/* Content Section */}
-          <div className="flex flex-col justify-center order-2 lg:order-1">
+          <div className="flex flex-col justify-center order-2 lg:order-1 py-12 sm:py-16 lg:py-0">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-primary mb-4 sm:mb-6 w-max">
               <ShieldCheckIcon className="h-3 w-3 sm:h-4 sm:w-4" />
@@ -61,7 +61,7 @@ export function HeroSection() {
           </div>
 
           {/* Image Section - Right Side */}
-          <div className="relative flex justify-center lg:justify-end order-1 lg:order-2 h-64 sm:h-80 lg:h-auto">
+          <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
             <img 
               src="/images/healthcare-team.png" 
               alt="Healthcare professionals - doctor and nurse" 
